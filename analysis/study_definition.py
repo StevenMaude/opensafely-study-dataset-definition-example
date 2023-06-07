@@ -12,5 +12,5 @@ study = StudyDefinition(
     },
     index_date="2020-01-01",
     population=patients.all(),
-    ons_cis_matches=patients.with_an_ons_cis_record("number_of_matches_in_period"),
+    age=patients.age_as_of("index_date")
 )
